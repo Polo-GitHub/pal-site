@@ -46,24 +46,19 @@ img {
 
 .main__container {
     width: 100%;
-    height: 100vh;
+    padding-top: 4rem;
+    /* min-height: 100vh; */
     position: relative;
-
-
-
 }
 
 .first__container-login,
 .second__container-login {
     width: 100%;
     max-width: 500px;
-    padding: 1rem 1rem;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 1rem auto;
     display: none;
     flex-direction: column;
+
 
 }
 
@@ -104,9 +99,9 @@ img {
 
 /* ------------------- Changing  of login page end -------------------- */
 .container {
-    padding: 30px 50px 50px;
+    padding: 30px 50px 65px;
     border: 1px solid var(--border-color);
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .container__img-wrapper {
@@ -293,8 +288,7 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: var(--footer-bg-color);
-    padding: 1rem 1rem;
-    margin-top: 1rem;
+   
 }
 
 small {
@@ -305,6 +299,8 @@ small {
 footer a {
     display: flex;
     width: max-content;
+    padding: 1rem 0rem 0.8rem;
+    margin-bottom: 0.2rem;
     font-family: var(--font-);
     font-size: 0.70rem;
     font-weight: 600;
@@ -315,16 +311,13 @@ footer a {
 
 /* Small Mobile (e.g., iPhone SE) */
 @media(max-width:320px){
-
-    .first__container-login,
-    .second__container-login {
-
-         top: 50%;
-         max-width: 100%;
+    .main__container {
+        max-width: 100%;
+        padding-top: 0.2rem;
     }
 
     .container {
-         padding: 30px 5px 120px;
+         padding: 0px 16px 45px;
          border: none;
     }
 
@@ -333,164 +326,108 @@ footer a {
     }
 
     .logo{
-        margin: 60px auto 0; 
+        margin: 1px auto 0; 
     }
 
     .back-logo {
-         margin: 100px auto 0;
+         margin: 1px auto 0;
     }
 
-    footer {
-         padding: 1rem 0 1rem;
-         margin-top: 1rem;
+    footer a {
+         padding: 1rem 0rem 1rem;
+         font-size: 0.70rem;
     }
 }
 
 /* Mobile (e.g., iPhone 8) */
 @media screen and (min-width:321px) and (max-width:375px) {
-
-    .first__container-login,
-    .second__container-login {
-         top: 50%;
-         width: 100%;
+    .main__container {
+        max-width: 100%;
+        padding-top: 0.2rem ;
     }
 
     .container {
-         padding: 0px 5px 120px;
+         padding: 0px 16px 45px;
          border: none;
     }
     .logo{
-        margin: 60px auto 0; 
+        margin: 1px auto 0; 
     }
 
     .back-logo {
-         margin: 100px auto 0;
+         margin: 1px auto 0;
     }
-
-    
-}
-
-
+    .site__language-section {
+        padding-bottom: 1.5rem;
+   }
+    footer a {
+        padding: 1rem 0rem 1rem;
+        font-size: 0.70rem;
+   }
+} 
 @media screen and (min-width:376px) and (max-width:414px) {
-
-    .first__container-login,
-    .second__container-login {
-         top: 50%;
-         width: 100%;
+    .main__container {
+        max-width: 100%;
+        padding-top: 0.2rem ;
     }
 
     .container {
-         padding: 0px 5px 120px;
+         padding: 0px 16px 45px;
          border: none;
     }
-
     .logo{
-        margin: 60px auto 0; 
+        margin: 1px auto 0; 
     }
 
     .back-logo {
-         margin: 100px auto 0;
+         margin: 1px auto 0;
     }
+    .site__language-section {
+        padding-bottom: 1.5rem;
+   }
+    footer a {
+        padding: 1rem 0rem 1rem;
+        font-size: 0.70rem;
+   }   
 }
 
 /* Large Mobile (e.g., iPhone 12, Galaxy S20) */
 /* Small Tablet (e.g., iPad Mini) */
-/* @media (min-width:415px) and (max-width: 768px) {
-
-    .first__container-login,
-    .second__container-login {
-         top: 65%;
-         width: 100%;
-    }
-
-    .container {
-        padding: 20px 50px 50px;
-       
-    }
-  
-    .logo {
-        margin: 5px auto 20px;
-        width: 30px;
-        height: 30px;
-    }
-    .back-logo{
-        margin: 10px auto 0;
-        width: 30px;
-        height: 30px;
-    }
-
-    .container__img-wrapper {
-        padding-bottom: 2rem;
-    }
-    
-    .site__language-section {
-       padding: 6.8rem 0 1rem 0;
-    }
-    .site__forgot-email{
-        font-size: 1rem;
-
-    }
-     .previous__page-email{
-        font-size: 2rem;
-     }
-
-     .previous__text{
-        font-size: 1rem;
-     } 
-
-     .prev__btn{
-        font-size: 1rem;
-     }
-
-     .site__next-btn, .site__signup-btn {
-        font-size: 1rem;
-     }
-
-    .site__next-btn, .site__signup-btn{
-    padding: 1rem 2rem;
-    }
-    .site__france,
-    .site__espanish,
-    .site__china {
-     font-size: 0.8rem; 
-    }
-
-    .site__english {
-     font-size: 0.8rem; 
-    }
-    ::placeholder {
-     font-size: 1rem;;
-    } 
-    .site__separator-text{
-     font-size: 1.2rem;
-    }
-    footer a {
-     font-size: 0.70rem;
-    } 
-
-} */
-
 @media (min-width:415px) and (max-width: 767px){
+    .main__container {
+        padding-top: 1rem ;
+    }
     .first__container-login,
     .second__container-login {
-         top: 50%;
          max-width: 100%;
     }
     .container {
-        padding: 20px 20px 50px;
+        padding: 0px 16px 12px;
         border: none;
     }
     .container__img-wrapper {
-        padding-bottom: 5rem;
-        padding-top: 3rem;
+        padding-bottom: 6rem;
     }
+    .logo{
+        margin: 1px auto 0; 
+    }
+
+    .back-logo {
+         margin: 1px auto 0;
+    }
+    .site__language-section {
+        padding-bottom: 3rem;
+   }
+    footer a {
+        padding: 1rem 0rem 1rem;
+        font-size: 0.75rem;
+   }  
 
 }
 /* Standard Tablet (e.g., iPad) */
 @media (min-width:768px) and (max-width:810px){
     .first__container-login,
     .second__container-login {
-         top: 65%;
          width: 100%;
     }
     .logo {
@@ -510,25 +447,24 @@ footer a {
 
     .first__container-login,
     .second__container-login {
-         top: 50%;
          width: 100%;
     }
 
     .container {
-         padding: 0px 5px 120px;
-         border: none;
+        padding: 0px 16px 12px;
+        border: none;
     }
-
- 
 
 }
 
 /* Large Tablet (e.g., iPad Pro) */
 @media (min-width:811px) and (max-width:1024px) {
-
     .first__container-login,
     .second__container-login {
-         top: 50%;
-         width: 100%;
+     width: 100%;
+
     }
+        
 }
+
+    
