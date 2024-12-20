@@ -149,8 +149,8 @@ input {
     font-weight: 500;
     color: var(--footer-txt-color);  
 }
-input:focus + .input__placeholder,
-input:not(:placeholder-shown) + .input__placeholder{
+input:focus ~ .input__placeholder,
+input:not(:placeholder-shown) ~ .input__placeholder{
     top: 10%;
     font-size: 0.9rem;
 }
