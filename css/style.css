@@ -130,10 +130,7 @@ img {
     color: var(--light--blue);
 }
 
-.show-btn:hover{
-    opacity: 0.5;
-    
-}
+
 
 input {
     padding: 20px 12px 8px;
