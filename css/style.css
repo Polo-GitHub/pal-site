@@ -148,6 +148,7 @@ input {
     font-size: 1rem;
     font-weight: 500;
     color: var(--footer-txt-color);  
+    transition: all 0.3s ease-in-out;
 }
 input:focus ~ .input__placeholder,
 input:not(:placeholder-shown) ~ .input__placeholder{
