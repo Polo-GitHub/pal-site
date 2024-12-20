@@ -1,3 +1,4 @@
+// Changing of the webpages
 const firstLoginPage = document.querySelector(".first__container-login");
 const secondtLoginPage = document.querySelector(".second__container-login");
 const loginNext = document.querySelector(".site__next-btn");
@@ -12,3 +13,19 @@ prevLogin.onclick = function(){
     secondtLoginPage.classList.remove("first__active")
 
 }
+
+// Show & Hide  password
+const getPassword = document.querySelector("#password");
+const showAndHidePassword = document.querySelector(".show-btn");
+
+showAndHidePassword.addEventListener("click", ()=>{
+    if(getPassword.type === "text"){
+        getPassword.type = "password";
+        showAndHidePassword.innerHTML = "Show"
+    }
+    else{
+        getPassword.type = "text"
+        showAndHidePassword.innerHTML = "Hide"
+    }
+
+});
