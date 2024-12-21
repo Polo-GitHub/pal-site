@@ -85,6 +85,7 @@ img {
     background: transparent;
     font-size: 1rem;
     font-weight: 600;
+    font-family: var(--font-);
     color: var(--light--blue);
     cursor: pointer;
 }
@@ -124,6 +125,7 @@ img {
     transform: translateX(-50%);
     background-color: transparent;
     font-size: 0.9675rem;
+    font-family: var(--font-);
     font-weight: 600;
     cursor: pointer;
     border: 0;
@@ -135,6 +137,7 @@ input {
     border: 1px solid var(--bg--dark-color);
     min-height: 64px;
     font-size: 1rem;
+    font-family: var(--font-);
     border-radius: 5px;
     background-color: var(--white--color);
     width: 100%;
@@ -223,6 +226,7 @@ input:not(:placeholder-shown) ~ .input__placeholder{
     background-color: var(--white--color);
     color: var(--grey--color);
     font-size: 1.2rem;
+    font-family: var(--font-);
     margin: 0 auto;
     display: grid;
     place-items: center;
