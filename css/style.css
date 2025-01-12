@@ -3,6 +3,7 @@
     --border-color: #EAECED;
     --white--color: #fff;
     --black--color: #000;
+    --red--color: #bb12128a; 
     --light--blue: #0070E0;
     --blue--color: #0551b5;
     --line--color-grey: #CBD2D6;
@@ -47,7 +48,6 @@ img {
 .main__container {
     width: 100%;
     padding-top: 4rem;
-    /* min-height: 100vh; */
     position: relative;
 }
 
@@ -143,9 +143,10 @@ input {
     width: 100%;
     outline-color: var(--light--blue);
 }
+
 .input__placeholder{
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 1rem;
     font-family: var(--font-);
     font-size: 1rem;
@@ -153,9 +154,22 @@ input {
     color: var(--footer-txt-color);  
     transition: all 0.3s ease-in-out;
 }
+.usererror__msg, .usererror___msg{
+    display: flex;
+    gap: 0.5rem;
+    font-family: var(--font-);
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--footer-txt-color);
+}
+
+.usererror__msg i, .usererror___msg i{
+    font-size: 1.4rem;
+    color: var(--red--color);
+}
 input:focus ~ .input__placeholder,
 input:not(:placeholder-shown) ~ .input__placeholder{
-    top: 10%;
+    top: 8%;
     font-size: 0.9rem;
 }
 
@@ -189,7 +203,7 @@ input:not(:placeholder-shown) ~ .input__placeholder{
     gap: 1.5rem;
 }
 
-.site__next-btn {
+.site__next-btn, .submit__btn{
     padding: 0.90rem 2rem;
     font-size: 1rem;
     font-family: var(--font-);
@@ -201,7 +215,7 @@ input:not(:placeholder-shown) ~ .input__placeholder{
     cursor: pointer;
 }
 
-.site__next-btn:hover {
+.site__next-btn:hover, .submit__btn:hover {
     background-color: var(--light--blue);
 }
 
