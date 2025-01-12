@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <script defer src="./script/script.js"></script>
 </head>
+
 <body>
     <section class="main__container">
         <div class="first__container-login first__active">
@@ -22,7 +23,8 @@
                 <form action="">
                     <div class="container__input">
                         <input type="text" class="email-input" name="email" placeholder=" " id="email">
-                        <label for="email" class="input__placeholder" >Email or mobile number</label>
+                        <label for="email" class="input__placeholder">Email or mobile number</label>
+                        <P class="usererror__msg"></P>
                         <a href="" class="site__forgot-email">Forgot email?</a>
                     </div>
                     <div class="site__button">
@@ -53,21 +55,21 @@
                 <div class="container__img-wrapper">
                     <img src="./image/img-logo.png" alt="" class="back-logo">
                 </div>
-                <form action="">
+                <form class="second__form" action="">
                     <div class="previous__page-email">
                         <p class="previous__text"></p>
                         <button type="button" class="prev__btn">Change</button>
                     </div>
 
                     <div class="container__input">
-                        <input type="password" name="password" placeholder=" " id="password">
-                        <label for="password"  class="input__placeholder">Password</label>
+                        <input type="password" class="password__input" name="password" placeholder=" " id="password">
+                        <label for="password" class="input__placeholder">Password</label>
+                        <P class="usererror___msg"></P>
                         <button type="button" class="show-btn">Show</button>
                         <a href="" class="site__forgot-email">Forgot password?</a>
                     </div>
-
                     <div class="site__button">
-                        <button type="submit" class="site__next-btn">Log In</button>
+                        <button type="submit" class="submit__btn">Log In</button>
                         <div class="site__separator-line">
                             <span class="site__separator-text">or</span>
                         </div>
@@ -88,7 +90,7 @@
                     </div>
 
                 </div>
-            </div> 
+            </div>
         </div>
         <footer>
             <small>
@@ -102,4 +104,5 @@
     </section>
 
 </body>
+
 </html>
