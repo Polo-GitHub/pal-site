@@ -158,7 +158,7 @@ input {
     display: flex;
     gap: 0.5rem;
     font-family: var(--font-);
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
     color: var(--footer-txt-color);
 }
@@ -186,11 +186,13 @@ input:not(:placeholder-shown) ~ .input__placeholder{
 }
 
 .site__forgot-email {
+      width: max-content;
+    border: 1px solid #000;
     font-family: var(--font-);
     font-size: 1rem;
     font-weight: 600;
     color: var(--light--blue);
-    padding-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 .site__forgot-email:hover {
