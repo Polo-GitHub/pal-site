@@ -65,7 +65,6 @@ formContainer.onsubmit = function (e){
         `
         return
      }
-          alert("Form sumbmited Succesfully")
 }
 
 emailInput.oninput = function (){
