@@ -41,7 +41,7 @@ loginNext.onclick = function () {
     const email = emailInput.value.trim()
     if (email === "") {
         emailErrorMssg.innerHTML = `
-        <i class="fa-solid fa-triangle-exclamation"></i>Required
+        <i class="fa-solid fa-triangle-exclamation"></i>Email is Required
         `
         return
     }
@@ -61,7 +61,7 @@ formContainer.onsubmit = function (e){
      const password = passwordInput.value.trim()
      if(password === ""){
         passwordErrorMssg.innerHTML = `
-        <i class="fa-solid fa-triangle-exclamation"></i>Required
+        <i class="fa-solid fa-triangle-exclamation"></i>Password is Required
         `
         return
      }
