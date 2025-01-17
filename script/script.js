@@ -63,8 +63,8 @@ formContainer.onsubmit = function (e){
         passwordErrorMssg.innerHTML = `
         <i class="fa-solid fa-triangle-exclamation"></i>Password is Required
         `
-          alert("Form sumbmited Succesfully")
         return
+          alert("Form sumbmited Succesfully")
      }
 }
 
