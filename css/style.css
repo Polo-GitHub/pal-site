@@ -186,8 +186,7 @@ input:not(:placeholder-shown) ~ .input__placeholder{
 }
 
 .site__forgot-email {
-      width: max-content;
-    border: 1px solid #000;
+    width: max-content;
     font-family: var(--font-);
     font-size: 1rem;
     font-weight: 600;
