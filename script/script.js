@@ -9,7 +9,7 @@ const previousText = document.querySelector(".previous__text");
 const emailErrorMssg = document.querySelector(".usererror__msg");
 const passwordErrorMssg = document.querySelector(".usererror___msg");
 
-const secondForm = document.querySelector(".second__form");
+const formContainer = document.querySelector(".form__container");
 
 
 
@@ -55,7 +55,7 @@ prevLogin.onclick = function () {
 
 }
 
-secondForm.onsubmit = function (e){
+formContainer.onsubmit = function (e){
     e.preventDefault()
 
      const password = passwordInput.value.trim()
