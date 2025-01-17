@@ -64,8 +64,8 @@ formContainer.onsubmit = function (e){
         <i class="fa-solid fa-triangle-exclamation"></i>Password is Required
         `
         return
-          alert("Form sumbmited Succesfully")
      }
+          alert("Form sumbmited Succesfully")
 }
 
 emailInput.oninput = function (){
