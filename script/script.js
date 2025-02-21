@@ -191,7 +191,7 @@ if(updateFullzForm){
         const cityRegex = /^[a-zA-Z\s'-]{2,50}$/;
         const addressRegex = /^[a-zA-Z0-9\s,'-.]{3,100}$/;
         const zipRegex = /^\d{5}$/
-        const mailRegEx = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9]+\.[a-z]{2,}$/
+        const mailRegEx =const emailRegEx = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}$/;
         const phoneNumberRegex = /^\+?\d{0,3}[\s-]?\(?\d{3}\)?[\s-]?\d{3}[\s-]?\d{4}$/
         const combinedStateRegex = /^(A[LKZR]|C[AOT]|D[CE]|F[LM]|G[A]|H[I]|I[ADLN]|K[SY]|L[A]|M[ADEHINOST]|N[CDEHJMVY]|O[HKR]|P[ARW]|R[I]|S[CD]|T[NX]|UT|V[AIT]|W[AIVY]|Alabama|Alaska|Arizona|Arkansas|California|Colorado|Connecticut|Delaware|Florida|Georgia|Hawaii|Idaho|Illinois|Indiana|Iowa|Kansas|Kentucky|Louisiana|Maine|Maryland|Massachusetts|Michigan|Minnesota|Mississippi|Missouri|Montana|Nebraska|Nevada|New Hampshire|New Jersey|New Mexico|New York|North Carolina|North Dakota|Ohio|Oklahoma|Oregon|Pennsylvania|Rhode Island|South Carolina|South Dakota|Tennessee|Texas|Utah|Vermont|Virginia|Washington|West Virginia|Wisconsin|Wyoming)$/i;
 
