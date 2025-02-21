@@ -107,7 +107,7 @@ function validateUserInput(inputElement, errorElement, message) {
 }
 
 function checkMail(email) {
-    const emailRegEx = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9]+\.[a-z]{2,}$/
+    const emailRegEx = const emailRegEx = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}$/;
     if (emailRegEx.test(email.toLowerCase().trim())) {
         return true
     }
